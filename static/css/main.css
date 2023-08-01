@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+   /* background: url("../img/imagen1.jpeg");*/
+}
+.imagenloader{
+    background: url("../img/loader2.jpeg");
+    background-size: cover;
+}
+.cambiar{
+    background: url("../img/principal.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100rem;
+}
+nav{
+    opacity: 0.5;
+}
+.navbar_abajo{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header{
+    background-color: #111;
+    width: 100%;
+    height: 150px;
+}
+.navbar_arriba{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#logo{
+    background: url("../img/fase1.jpeg");
+    width: 100px;
+    height: 100px;
+    margin-left: 47%;
+    border-radius: 50%;
+    border-top: 2px solid #04AA6D;
+}
+.navbar_arriba li {
+    float: left;
+}
+.navbar_arriba li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif; 
+}
+.navbar_arriba li a:hover:not(.active) {
+    background-color: #FFF4F4;
+    transition: all 2s;
+    opacity: 1;
+    color: #213555;
+    box-shadow: 10px 10px #A76F6F;
+}
+.navbar_arriba .active {
+    background-color: #04AA6D;
+}
+
+
+
+
+.navbar_abajo li {
+    float: center;
+
+}
+  
+.navbar_abajo li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.navbar_abajo li a:hover:not(.active) {
+    background-color: #FFF4F4;
+    transition: all 2s;
+    opacity: 1;
+    color: #213555;
+    border-radius: 30px;
+    box-shadow: 10px 10px lightblue;
+  }
+  
+.navbar_abajo .active {
+    background-color: #04AA6D;
+  }

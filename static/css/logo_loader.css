@@ -1,0 +1,17 @@
+.logo{
+    -webkit-animation: spin1 2s linear infinite;
+    animation: spin1 2s linear;
+    animation-duration: 4s;
+    /*animation: fases 2s linear infinite;*/
+}
+
+@-webkit-keyframes spin1 {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin1 {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+  

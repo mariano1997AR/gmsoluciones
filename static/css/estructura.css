@@ -1,0 +1,19 @@
+main{
+    margin-top: 354px;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1ps solid black;
+    opacity: 0.6;
+}
+
+main .articulo{
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 50px;
+}
+.img{
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+}

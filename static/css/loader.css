@@ -1,0 +1,57 @@
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 180px;
+    height: 180px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    /*border-top: 16px solid #3498db;*/
+   
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    /*animation: fases 2s linear infinite;*/
+  }
+
+/*
+  @keyframes fases {
+    0% { background: url("../img/fase1.jpeg"); transform: rotateY(0deg);transition: all 0.2s; }
+    50% { background: url("../img/fase2.jpeg"); transform: rotateX(180deg);transition: all 0.2s; width: 300;height: 200px; }
+    100% { background: url("../img/fase3.jpeg");transform: rotatex(360deg); transition: all 0.2s; width: 350;height: 250px;}
+  }*/
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg);background: url("../img/subloader1.jpeg"); background-size: cover;}
+    100% { transform: rotate(360deg); background: url("../img/loader2.jpeg"); background-size: cover;}
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #div1 {
+    display: none;
+    text-align: center;
+  }

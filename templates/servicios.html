@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ lista1[1] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/loader.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/fuentes.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/logo_loader.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/social.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estructura.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacto.css')}}">  
+</head>
+<body>
+    <div id="loader"></div>    
+    <div id="div1" class="animate-bottom">
+       <!--<h2> fdfsfsdfs </h2>
+       <p>fdfsfsdfsfsdfssdf</p>-->
+       <nav>
+        <ul class="navbar_arriba">
+            <header>
+                 <div id="logo" class="logo"></div>
+            </header>
+            <li><a class="active" href="{{ url_for('index')}}">Inicio</a></li>
+            <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+            <li><a href="{{ url_for('contacto')}}">Contacto</a></li>
+         </ul>
+       </nav>
+       <main>
+          <article class="articulo">
+            <h2>Subtitulo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero facere quam praesentium! Eius hic id at minima cum, voluptates pariatur dolorem, neque ab numquam possimus ipsum omnis veritatis laboriosam esse!
+               Odio rem nobis pariatur enim soluta, maxime ullam praesentium molestiae voluptas deserunt. Rem, ad reprehenderit quam minus error dolorem! Neque, molestias doloribus fuga quod laboriosam dolore similique facilis assumenda reprehenderit!
+               Tempora exercitationem suscipit delectus autem tenetur voluptatum quasi iure possimus ad voluptatem, consequuntur laborum aliquid non recusandae laboriosam fuga, quisquam explicabo aperiam! Eos perspiciatis obcaecati perferendis vel porro sequi recusandae.
+               Itaque, nulla. Modi explicabo possimus asperiores animi accusantium rerum debitis, unde obcaecati, deserunt pariatur officia. Fugit placeat accusamus libero enim necessitatibus officiis provident corrupti rerum, mollitia, ex blanditiis veritatis voluptate.
+                Ab repellendus maiores, temporibus aliquid nihil, ipsum voluptate nam perspiciatis, voluptatem aperiam neque fugiat qui ratione corrupti? Aut voluptatem eum cum excepturi, error dicta. Laborum inventore saepe porro voluptatem laboriosam!</p>
+               <img class="img" src="../static/img/fase2.jpeg" alt="">
+          </article>
+          <article class="articulo">
+            <h2>Subtitulo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero facere quam praesentium! Eius hic id at minima cum, voluptates pariatur dolorem, neque ab numquam possimus ipsum omnis veritatis laboriosam esse!
+               Odio rem nobis pariatur enim soluta, maxime ullam praesentium molestiae voluptas deserunt. Rem, ad reprehenderit quam minus error dolorem! Neque, molestias doloribus fuga quod laboriosam dolore similique facilis assumenda reprehenderit!
+               Tempora exercitationem suscipit delectus autem tenetur voluptatum quasi iure possimus ad voluptatem, consequuntur laborum aliquid non recusandae laboriosam fuga, quisquam explicabo aperiam! Eos perspiciatis obcaecati perferendis vel porro sequi recusandae.
+               Itaque, nulla. Modi explicabo possimus asperiores animi accusantium rerum debitis, unde obcaecati, deserunt pariatur officia. Fugit placeat accusamus libero enim necessitatibus officiis provident corrupti rerum, mollitia, ex blanditiis veritatis voluptate.
+                Ab repellendus maiores, temporibus aliquid nihil, ipsum voluptate nam perspiciatis, voluptatem aperiam neque fugiat qui ratione corrupti? Aut voluptatem eum cum excepturi, error dicta. Laborum inventore saepe porro voluptatem laboriosam!</p>
+            <img class="img"  src="../static/img/fase3.jpeg" alt="">
+           </article>
+          
+       </main>
+       <nav>
+          <ul class="navbar_abajo">
+             <li><a href="#Inicio" class="modificar"><img class="red_social" src="../static/img/logo_insta.png" alt="red_social">Instagram</a></li>
+             <li><a href="#Adios" class="modificar"><img class="red_social" src="../static/img/logo_linke.png"  alt="logo de linkeln">Linkedln</a></li>
+             <li><a href="#Contacto">Develpment By Mariano Martinotti </a></li>
+          </ul>
+       </nav>
+   </div>
+   
+   <script src="{{ url_for('static',filename='js/loader.js' )}}"></script>
+</body>
+</html>

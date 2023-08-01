@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ lista1[0] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/loader.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/fuentes.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/logo_loader.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/social.css')}}">
+</head>
+<body>
+    <div id="loader"></div>    
+    <div id="div1" class="animate-bottom">
+       <!--<h2> fdfsfsdfs </h2>
+       <p>fdfsfsdfsfsdfssdf</p>-->
+       <nav>
+        <ul class="navbar_arriba">
+            <header>
+                 <div id="logo" class="logo"></div>
+            </header>
+            <li><a class="active" href="{{ url_for('index')}}">Inicio</a></li>
+            <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+         </ul>
+       </nav>
+       <nav>
+          <ul class="navbar_abajo">
+             <li><a href="#Inicio" class="modificar"><img class="red_social" src="../static/img/logo_insta.png" alt="red_social">Instagram</a></li>
+             <li><a href="#Adios" class="modificar"><img class="red_social" src="../static/img/logo_linke.png"  alt="logo de linkeln">Linkedln</a></li>
+             <li><a href="#Contacto">Develpment By Mariano Martinotti </a></li>
+          </ul>
+       </nav>
+   </div>
+   
+   <script src="{{ url_for('static',filename='js/loader.js' )}}"></script>
+</body>
+</html>
